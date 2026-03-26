@@ -224,10 +224,10 @@ body{{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--tex
 .c1 .value{{color:#e17055}}.c2 .value{{color:var(--accent)}}.c3 .value{{color:var(--green)}}.c4 .value{{color:#fdcb6e}}
 .section-title{{font-size:.88rem;font-weight:600;color:var(--text-dim);text-transform:uppercase;letter-spacing:.8px;margin-bottom:12px}}
 .brand-grid{{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}}
-.brand-card{{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px 20px;transition:opacity .3s }}
+.brand-card{{background:var(--bg2);border:1px solid var(--border);border-radius:14px;padding:18px 20px;transition:opacity .3s}}
 .brand-card.archived{{display:none}}
 .brand-card-header{{display:flex;align-items:center;gap:10px;margin-bottom:12px}}
-  .brand-avatar{{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}}
+.brand-avatar{{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:700;flex-shrink:0}}
 .brand-card-info{{flex:1}}
 .brand-card-info h3{{font-size:.9rem;font-weight:600}}
 .brand-card-info p{{font-size:.72rem;color:var(--text-dim)}}
@@ -258,7 +258,7 @@ body{{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--tex
 .next-event-name{{font-size:.85rem;font-weight:600}}
 .next-event-time{{font-size:.75rem;color:var(--text-dim)}}
 .tl-allday{{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--border)}}
-.tl-allday-badge{{font-size:.66rem;background:rgba(253,203,110,.15);color:#fdcb6e;border:1px solid rgba(253,203,110,.3);border-radius:4px;padding:2px 6px;white-space:nowrap;margin-top:1px}}
+.tl-allday-badge{{font-size:.66rem;background:rgba(253,203,110,.15);color:#fdcb6e;border:1px solid rgba(253,203,110,.3);border-radius:4px;padding:2px 6px;white-space:nowraw;margin-top:1px}}
 .tl-allday-text{{font-size:.8rem}}
 .tl-item{{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--border)}}
 .tl-item:last-child{{border-bottom:none}}
@@ -337,7 +337,7 @@ footer{{text-align:center;padding:14px 24px;font-size:.72rem;color:var(--text-di
   <div class="sidebar-divider"></div>
   <div class="sidebar-section">
     <div class="sidebar-label">連結工具</div>
-    <div class="sidebar-item" onclick="window.open('https://calendar.google.com','_blank')"><span class="icon">📆</span>Google 行ĺ�曆</div>
+    <div class="sidebar-item" onclick="window.open('https://calendar.google.com','_blank')"><span class="icon">📆</span>Google 行事曆</div>
     <div class="sidebar-item"><span class="icon">📁</span>Google Drive</div>
     <div class="sidebar-item"><span class="icon">📊</span>Meta Ads</div>
   </div>
