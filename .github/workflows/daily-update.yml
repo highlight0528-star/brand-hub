@@ -1,0 +1,21 @@
+name: "🚀 Brand Hub 每日自動更新"
+on:
+  schedule:
+    - cron: '0 1 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install cryptography
+      - run: python generate_dashboard.py
+        env:
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+          CALENDAR_ID: ${{ secrets.CALENDAR_ID }}
+          NETLIFY_SITE_ID: venerable-kitten-2a42be
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
